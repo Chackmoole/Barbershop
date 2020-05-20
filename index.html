@@ -5,50 +5,36 @@
     <title>Учебный: Barbershop</title>
   </head>
   <body>
+    <!-- пересмотреть классы -->
     <header class="page-header">
       <nav class="main-nav">
-        <!-- забыл обернуть в ссылку -->
-        <a>
-          <img
-            class="logo"
-            src="/img/logo.png"
-            alt="Логотип Barbershop"
-            height="132"
-            width="371"
-          />
-        </a>
-        <ul class="main-nav__list main-nav__navigation">
+        <ul class="main-nav__list">
           <li>
-            <a href="#" class="main-nav__link main-nav__link--activ"
-              >Информация</a
-            >
+            <a class="main-nav__link main-nav__link--active">Информация</a>
           </li>
           <li><a href="#" class="main-nav__link">Новости</a></li>
           <li><a href="#" class="main-nav__link">Прайс-Лист</a></li>
           <li><a href="#" class="main-nav__link">Магазин</a></li>
           <li><a href="#" class="main-nav__link">Контакты</a></li>
         </ul>
-
-        <ul class="main-nav__list main-nav__user-list">
-          <!-- добавил на всякий случай скрытый раздел Регистрация -->
-          <li>
-            <a class="main-nav__link" href="#">
-              <span class="visually-hidden">Регистрация</span>
-            </a>
-          </li>
-          <!-- добавлена ссылка на Вход, но в скринкасте нет ссылки -->
-          <li><a class="main-nav__link" href="#">Вход</a></li>
-        </ul>
       </nav>
+      <a class="login-link" href="#">Вход</a>
     </header>
 
     <main class="page-content">
-      <h1 class="page-content">
-        <span class="visually-hidden">Барбершоп «Бородинский»</span>
+      <img
+        class="logo"
+        src="/img/logo.png"
+        alt="Логотип Barbershop"
+        height="132"
+        width="371"
+      />
+      <h1 class="visually-hidden">
+        Барбершоп «Бородинский»
       </h1>
 
       <section class="features">
-        <h2><span class="visualli-hidden">Преимещества барбершоп</span></h2>
+        <h2 class="visualli-hidden">Преимещества барбершоп</h2>
         <ul class="features__list">
           <li class="features__item">
             <p class="features__title">Быстро</p>
@@ -75,118 +61,113 @@
         </ul>
       </section>
 
-      <div class="sections-wrapper">
-        <section class="news">
-          <h2 class="news__title page-subtitle">Новости</h2>
-          <ul class="news__list">
-            <li class="news__item">
-              <p class="news__text">
-                Нам наконец завезли Ягермайстер! Теперь вы&nbsp;можете
-                пропустить стаканчик во&nbsp;время стрижки
-              </p>
-              <time class="news__time" datetime="2016-01-11">11 января</time>
-            </li>
-            <li class="news__item">
-              <p class="news__text">
-                В&nbsp;нашей команде пополнение, Борис &laquo;Бритва&raquo;
-                стригунец, обладатель множества титулов и&nbsp;наград пополнил
-                наши стройные ряды
-              </p>
-              <time class="news__time" datetime="2016-01-18">18 января</time>
-            </li>
-          </ul>
-          <a class="button button__news" href="#">Все новости</a>
-        </section>
+      <section class="news">
+        <h2 class="news__title page-subtitle">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <p class="news__text">
+              Нам наконец завезли Ягермайстер! Теперь вы&nbsp;можете пропустить
+              стаканчик во&nbsp;время стрижки
+            </p>
+            <time class="news__time" datetime="2016-01-11">11 января</time>
+          </li>
+          <li class="news__item">
+            <p class="news__text">
+              В&nbsp;нашей команде пополнение, Борис &laquo;Бритва&raquo;
+              стригунец, обладатель множества титулов и&nbsp;наград пополнил
+              наши стройные ряды
+            </p>
+            <time class="news__time" datetime="2016-01-18">18 января</time>
+          </li>
+        </ul>
+        <a class="button button__news" href="#">Все новости</a>
+      </section>
 
-        <section class="gallery">
-          <h2 class="gallery__title page-subtitle">Фотогалерея</h2>
-          <figure class="gallery__slider">
-            <!-- добавил ссылку на изображение, изначально не предумострел. Попап изображения как делается? -->
-            <a href="#">
-              <img
-                src="/img/gallary_slid1.png"
-                alt="Вид салона"
-                height="164"
-                width="286"
-              />
-            </a>
-            <button class="button button--prev">Предыдущий слайд</button>
-            <button class="button button--next">Следующий слайд</button>
-          </figure>
-        </section>
-      </div>
-      <div class="sections-wrapper">
-        <section class="contacts">
-          <h2 class="contacts__title page-subtitle">Контактная информация</h2>
-          <!-- вот тут надо уточнить, как правильно делать -->
-          <!-- в демке 2 p, но так не симантичнее, с учетом телефона? -->
-          <p class="contacts__text">Барбершоп «Бородинский»</p>
-          <address class="contacts__text">
-            Адрес: г. Санкт-Петербург, Б. Конюшенная Д 19/8
-          </address>
-          <a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
-          <p class="contacts__text">
-            Время работы: <br />
-            Пн—Пт: С 10:00 до 22:00 <br />
-            Сб—Вс: С 10:00 до 19:00
-          </p>
-          <!-- тут добавил микс классов для последующего позиционирования. Зря? -->
-          <a class="button contacts__routing" href="#">Как проехать</a>
-          <a class="button contacts__callback" href="#">Обратная связь</a>
-        </section>
-        <section class="appointment">
-          <h2 class="appointment__title page-subtitle">Записаться</h2>
-          <p class="appointment__text">
-            Укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся
-            с&nbsp;вами для подтверждения брони
-          </p>
-          <form class="appointment__form">
-            <label class="appointment__heading" for="appointment-date">
-              Дата
-            </label>
-            <input
-              class="appointment__input"
-              id="appointment-date"
-              type="text"
-              placeholder="08.10.2017"
-            />
-            <label class="appointment__heading" for="appointment-time">
-              Время
-            </label>
-            <input
-              class="appointment__input"
-              id="appointment-time"
-              type="text"
-              placeholder="10:00"
-            />
-            <label class="appointment__heading" for="appointment-name">
-              Ваше имя
-            </label>
-            <input
-              class="appointment__input"
-              id="appointment-name"
-              type="text"
-              placeholder="Борода"
-            />
-            <label class="appointment__heading" for="appointment-tel">
-              Телефон
-            </label>
-            <input
-              class="appointment__input"
-              id="appointment-tel"
-              type="text"
-              placeholder="+7 123 456-78-90"
-            />
-            <input type="submit" class="button appointment__button" />
-          </form>
-        </section>
-      </div>
+      <section class="gallery">
+        <h2 class="gallery__title page-subtitle">Фотогалерея</h2>
+        <figure class="gallery__slider">
+          <img
+            src="/img/gallary_slid1.png"
+            alt="Вид салона"
+            height="164"
+            width="286"
+          />
+
+          <button class="button button--prev">Предыдущий слайд</button>
+          <button class="button button--next">Следующий слайд</button>
+        </figure>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title page-subtitle">Контактная информация</h2>
+        <p class="contacts__text">Барбершоп «Бородинский»</p>
+        <address class="contacts__text">
+          Адрес: г. Санкт-Петербург, Б. Конюшенная Д 19/8
+        </address>
+        <a href="tel:+74956660266">Телефон: +7 (495) 666-02-66</a>
+        <p class="contacts__text">
+          Время работы: <br />
+          Пн—Пт: С 10:00 до 22:00 <br />
+          Сб—Вс: С 10:00 до 19:00
+        </p>
+        <!-- скорее всего надо див для позиционирования -->
+        <a class="button contacts__routing" href="#">Как проехать</a>
+        <a class="button contacts__callback" href="#">Обратная связь</a>
+      </section>
+      <section class="appointment">
+        <h2 class="appointment__title page-subtitle">Записаться</h2>
+        <p class="appointment__text">
+          Укажите желаемую дату и&nbsp;время и&nbsp;мы&nbsp;свяжемся с&nbsp;вами
+          для подтверждения брони
+        </p>
+        <form class="appointment__form">
+          <!-- дивы для позиционирования -->
+          <label class="appointment__heading" for="appointment-date">
+            Дата
+          </label>
+          <input
+            class="appointment__input"
+            id="appointment-date"
+            type="text"
+            placeholder="08.10.2017"
+          />
+          <label class="appointment__heading" for="appointment-time">
+            Время
+          </label>
+          <input
+            class="appointment__input"
+            id="appointment-time"
+            type="text"
+            placeholder="10:00"
+          />
+          <label class="appointment__heading" for="appointment-name">
+            Ваше имя
+          </label>
+          <input
+            class="appointment__input"
+            id="appointment-name"
+            type="text"
+            placeholder="Борода"
+          />
+          <label class="appointment__heading" for="appointment-tel">
+            Телефон
+          </label>
+          <input
+            class="appointment__input"
+            id="appointment-tel"
+            type="text"
+            placeholder="+7 123 456-78-90"
+          />
+          <button type="submit" class="button appointment__button">
+            Отправить
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
       <section class="footer-contacts">
-        <!-- тут тоже сделано одной p и внтури 1 ссылка на карту -->
-        <h3><span class="visualli-hidden">Контакты</span></h3>
+        <h3 class="visualli-hidden">Контакты</h3>
         <p class="footer-contacts__text">Барбершоп «Бородинский»</p>
         <address class="footer-contacts__text">
           Адрес: г. Санкт-Петербург, Б. Конюшенная Д 19/8
@@ -200,7 +181,7 @@
         </a>
       </section>
       <section class="socials">
-        <h3><span class="visualli-hidden">Мы в социальных сетях</span></h3>
+        <h3 class="visualli-hidden">Мы в социальных сетях</h3>
         <b class="socials__title">Давайте дружить</b>
         <ul>
           <li>
@@ -220,35 +201,46 @@
           </li>
         </ul>
       </section>
-      <section class="copyright">
-        <!-- добавил скрытый заголовок. может быть его вместо b сделать? не понятно не будет ли перебором -->
-        <h3><span class="visualli-hidden">Произведено</span></h3>
+      <div class="copyright">
         <b class="button copyright__title">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/"
-          >HTML academy</a
-        >
-      </section>
+        <a class="button copyright__link" href="https://htmlacademy.ru/">
+          HTML academy
+        </a>
+      </div>
     </footer>
 
     <section class="popup popup-login">
       <h2 class="popup-login__title page-subtitle">Личный кабинет</h2>
       <form class="popup-login__form">
-        <label class="popup-login__text">
+        <p class="popup-login__text">
           Введите пожалуйста свой логин и пароль
-          <input class="popup-login__input" type="text" placeholder="Логин" />
-        </label>
+        </p>
+        <input class="popup-login__input" type="text" placeholder="Логин" />
+
         <input class="popup-login__input" type="text" placeholder="Пароль" />
-        <input class="popup-login__checkbox" type="checkbox" checked />
-        <p class="popup-login__text">Запомнить меня</p>
+        <input
+          class="popup-login__checkbox"
+          type="checkbox"
+          id="popup-login-checkbox"
+          checked
+        />
+        <label class="popup-login__text" for="popup-login-checkbox"
+          >Запомнить меня</label
+        >
+
         <a class="popup-login__link" href="#"> Я забыл пароль</a>
-        <input type="submit" value="Войти" />
+        <button type="submit">Войти</button>
       </form>
-      <button class="popup-login__close">x</button>
+      <button class="popup-login__close">
+        <span class="visually-hidden">Закрыть форму логина</span>
+      </button>
     </section>
 
     <section class="popup popup-map">
-      <h2><span class="visually-hidden">Как к нам проехать</span></h2>
-      <button class="popup-map__close">x</button>
+      <h2 class="visually-hidden">Как к нам проехать</h2>
+      <button class="popup-map__close">
+        <span class="visually-hidden">Закрыть карту</span>
+      </button>
     </section>
   </body>
 </html>
