@@ -1,3 +1,3 @@
 # Barbershop
 
-study project test
+study project test2
