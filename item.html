@@ -6,23 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html">
-        <img
-          src="https://via.placeholder.com/111sx24"
-          alt="Логотоип барбершоп «Бородинский»"
-          width="111"
-          height="24"
-        />
-      </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li><a class="main-nav__link">Информация</a></li>
           <li><a href="#" class="main-nav__link">Новости</a></li>
-          <li>
-            <a href="#" class="main-nav__link main-nav__link--active">
-              Прайс-Лист
-            </a>
-          </li>
+          <li><a href="price.html" class="main-nav__link">Прайс-Лист</a></li>
           <li><a href="catalog.html" class="main-nav__link">Магазин</a></li>
           <li><a href="#" class="main-nav__link">Контакты</a></li>
         </ul>
@@ -31,68 +19,99 @@
       <a class="login-link" href="#">Вход</a>
     </header>
 
-    <main class="price-content">
-      <h1 class="price-content__title page-subtitle">Прайс-Лист</h1>
+    <main class="page-content">
+      <h1 class="page-content__title">
+        Набор для путшествий &laquo;Baxter of&nbsp;California&raquo;
+      </h1>
+      <!-- Уточнить по крошкам. Почему-то магазин и потом провалились в Средтсва для ухода, а роутинг вроде как в магазине - непонятно. -->
       <nav class="breadcrumbs">
         <ol class="breadcrumbs__list">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Средства для ухода</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item">
             <a class="breadcrumbs__link breadcrumbs__link--active">
-              Прайс-Лист
+              Набор для путшествий "Baxter of California"
             </a>
           </li>
         </ol>
       </nav>
-
-      <h2 class="slogan">Истинно мужская классика</h2>
-
-      <section class="price-features">
-        <h3 class="price-features__title heading">
-          Мы используем только лучшие средства:
-        </h3>
-        <ul class="price-features__list">
-          <li class="price-features__item">Baxter of California</li>
-          <li class="price-features__item">Mr Natty</li>
-          <li class="price-features__item">Suavecito</li>
-          <li class="price-features__item">Malin-Goetz</li>
+      <article class="card-item">
+        <h2 class="visually-hidden">
+          Карточка товара Набор для путшествий "Baxter of California"
+        </h2>
+        <ul class="card-item__slider">
+          <li class="card-item__item">
+            <a class="card-item__link card-item__link--active" href="#">
+              <img
+                src="https://via.placeholder.com/460sx498"
+                alt="Большое изображение товара"
+                width="460"
+                height="498"
+              />
+            </a>
+            <a class="card-item__link" href="#"></a>
+          </li>
+          <li class="card-item__link">
+            <a href="#">
+              <img
+                src="https://via.placeholder.com/140sx149"
+                alt="Превью товара"
+                width="140"
+                height="149"
+              />
+            </a>
+          </li>
+          <li class="card-item__link">
+            <a href="#">
+              <img
+                src="https://via.placeholder.com/140sx149"
+                alt="Превью товара"
+                width="140"
+                height="149"
+              />
+            </a>
+          </li>
+          <li class="card-item__link">
+            <a href="#">
+              <img
+                src="https://via.placeholder.com/140sx149"
+                alt="Превью товара"
+                width="140"
+                height="149"
+              />
+            </a>
+          </li>
         </ul>
-      </section>
-      <section class="price">
-        <h3 class="price__title heading">Цены на услуги наших мастеров:</h3>
-        <table class="price-table">
-          <tr>
-            <th>Стрижка</th>
-            <td>1500 Р</td>
-          </tr>
-          <tr>
-            <th>Стрижка бороды</th>
-            <td>500 Р</td>
-          </tr>
-          <tr>
-            <th>Накрутка усов</th>
-            <td>350 Р</td>
-          </tr>
-        </table>
-      </section>
-      <section class="about-us">
-        <h3 class="about-us__title heading">Несколько слов о нас</h3>
-        <p class="about-us__text">
-          Наша парикмахерская занимается исключительно мужскими стрижками.
-          Стрижка каждого клиента для нас&nbsp;&mdash; это уникальная
-          и&nbsp;продуманная до&nbsp;мелочей работа. Мы&nbsp;не&nbsp;работаем
-          на&nbsp;количество, мы&nbsp;работаем на&nbsp;качество.
+        <!-- и тут пошло дофига п-шек -->
+        <p class="card-item__availability">Есть в наличии</p>
+        <p class="card-item__vendor-code">Артикул: Dexter-AE</p>
+        <p class="card-item__text">
+          Travel Kit&nbsp;&mdash; необходимый аксесуар во&nbsp;время любого
+          путешествия. В&nbsp;аккуратной кажаной сумке находится все, что нужно
+          для бритья и&nbsp;ухода за&nbsp;кожей во&nbsp;время рабочей поездки
+          или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
+          крем после бритья, шампунь. Набор также может стать отличным подраком.
         </p>
-        <p class="about-us__text">
-          Наша мастерская расположена в центре города, поэтому сделать стильную
-          стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете
-          погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
-          свободно!
-        </p>
-      </section>
-    </main>
+        <p class="card-item__price">2 900 Р</p>
+        <a class="card-item__button button" href="#">Купить</a>
 
+        <h2 class="card-item__title">В набор входят:</h2>
+        <ul class="card-item__consist">
+          <li class="card-item__desc">Средство для умывания (50 мл)</li>
+          <li class="card-item__desc">Увлажняющий крем (50 мл)</li>
+          <li class="card-item__desc">Крем для бритья (50 мл)</li>
+          <li class="card-item__desc">Крем после бритья (50 мл)</li>
+          <li class="card-item__desc">Удобная кожаная косметичка</li>
+        </ul>
+      </article>
+    </main>
     <footer class="page-footer">
       <section class="footer-contacts">
         <h3 class="visualli-hidden">Контакты</h3>
