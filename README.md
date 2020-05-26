@@ -1,3 +1,2 @@
 # Barbershop
-
-study project test branch master
+study project
